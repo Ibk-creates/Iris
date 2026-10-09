@@ -29,6 +29,7 @@ plt.show()
 
 sns.pairplot(iris, hue='Species')
 plt.suptitle("Pairplot of Iris Dataset", y=1.02)
+plt.show()
 
 sns.heatmap(iris.drop(columns='Species').corr(), annot=True, cmap='coolwarm')
 plt.title("Correlation Heatmap of Iris Dataset")
